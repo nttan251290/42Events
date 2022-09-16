@@ -1,0 +1,72 @@
+@import '~antd/dist/antd.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+.App {
+  text-align: center;
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+    width: 43px;
+    height: 43px;
+    z-index: 1;
+    opacity: .5;
+
+    &:before {
+      content: ''
+    }
+
+    &,
+    &:hover {
+      border: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block !important;
+    }
+  }
+
+  .slick-prev {
+    left: 21%;
+
+    &,
+    &:hover {
+      background-image: url(https://s3-ap-southeast-1.amazonaws.com/web42-assets/images/icons/back@2x.png);
+    }
+  }
+
+  .slick-next {
+    right: 21%;
+
+    &,
+    &:hover {
+      background-image: url(https://s3-ap-southeast-1.amazonaws.com/web42-assets/images/icons/forward@2x.png);
+    }
+  }
+
+  .slick-disabled {
+    display: none !important;
+  }
+}
+
+.ant-back-top-content {
+  color: #000;
+  background-color: #fff;
+}
+
+.ant-back-top-content:hover {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}

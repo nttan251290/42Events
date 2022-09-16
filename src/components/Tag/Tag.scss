@@ -1,0 +1,15 @@
+.component-tag {
+  margin-right: 10px;
+  padding: 8px 10px;
+  text-transform: capitalize;
+  border: 1px solid grey;
+  border-radius: 20px;
+
+  &__prefix {
+    margin-right: 5px;
+  }
+
+  &__suffix {
+    margin-left: 5px;
+  }
+}

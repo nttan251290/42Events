@@ -1,0 +1,19 @@
+.component-banner {
+  margin: 20px 0 40px;
+
+  &__item {
+    max-width: 1032px;
+    margin: auto;
+
+    &-image {
+      height: 250px;
+      border-radius: 15px;
+    }
+
+    @media screen and (min-width: 992px) {
+      &-image {
+        height: 463px;
+      }
+    }
+  }
+}

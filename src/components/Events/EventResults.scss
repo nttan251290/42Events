@@ -1,0 +1,45 @@
+.component-event-results {
+  max-width: 840px;
+  margin: 20px auto;
+  padding: 0 20px 20px;
+  text-align: left;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      margin-right: 10px;
+    }
+  }
+
+  .component-events__item {
+    margin-bottom: 30px;
+    margin-right: 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+
+      &-image {
+        &__wrapper {
+          max-width: 40%;
+          margin-right: 20px;
+        }
+
+        &__content {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .ant-switch-checked {
+    background-color: #ff5252;
+  }
+}
